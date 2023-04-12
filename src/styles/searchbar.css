@@ -1,0 +1,10 @@
+.searchbar {
+    outline: 2px solid white;
+    border-radius: 10px;
+}
+fieldset{
+    display: none ;
+}
+.cityname{
+    color: white;
+}

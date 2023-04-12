@@ -1,0 +1,126 @@
+.citywrapper {
+    background: hsla(113, 96%, 81%, 1);
+
+    background: linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(113, 96%, 81%, 1) 0%, hsla(188, 90%, 51%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ADFDA2", endColorstr="#11D3F3", GradientType=1);
+    padding: 30px 50px;
+    border-radius: 15px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 7px 29px 0px;
+}
+
+.cityname {
+    display: flex !important;
+    place-items: center;
+    gap: 10px;
+}
+
+.timewrap {
+    display: flex;
+    gap: 10px;
+}
+
+.datawrapper {
+    display: flex !important;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.databox {
+    background: #457b9d;
+    padding: 15px;
+    width: 175px;
+    height: 175px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.timeweather {
+    background: hsla(206, 91%, 66%, 1);
+
+    background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#5AB2F7", endColorstr="#12CFF3", GradientType=1);
+    margin-top: 50px;
+    display: flex !important;
+    flex-wrap: wrap;
+    place-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 30px 10px;
+    border-radius: 15px;
+}
+
+.timebox {
+    width: 175px !important;
+    height: 175px !important;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    padding: 30px 50px;
+}
+
+.weekweather {
+    color: white;
+    display: grid !important;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 30px 30px;
+}
+
+.weekbox {
+    background: hsla(276, 91%, 79%, 1);
+    background: linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    gap: 5px;
+    place-content: center;
+    place-items: center;
+    border-radius: 10px;
+}
+
+@media (width<=1260px) {
+    .weekweather{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media (width<=860px) {
+    .weekweather{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (width<=560px) {
+    .weekweather{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (width<=430px) {
+    .weekweather{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
