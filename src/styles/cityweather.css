@@ -121,6 +121,7 @@
 }
 @media (width<=430px) {
     .weekweather{
-        grid-template-columns: repeat(1,1fr);
+        display: flex ;
+    justify-content: center;        
     }
 }
