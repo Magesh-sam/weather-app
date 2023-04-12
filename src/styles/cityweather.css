@@ -112,19 +112,25 @@
 
 @media (width<=860px) {
     .weekweather {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (width<=700px) {
+    .weekweather {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-@media (width<=560px) {
+@media (width<=540px) {
     .weekweather {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr)
     }
 }
-
-@media (width<=430px) {
+@media (width<=400px) {
     .weekweather {
-        display: flex;
+        display: flex !important;
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
