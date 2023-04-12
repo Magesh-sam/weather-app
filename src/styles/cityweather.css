@@ -122,6 +122,6 @@
 @media (width<=430px) {
     .weekweather{
         display: flex ;
-    justify-content: center;        
+    justify-content: center;
     }
 }
